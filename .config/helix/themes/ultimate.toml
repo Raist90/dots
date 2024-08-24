@@ -3,6 +3,9 @@ inherits = "catppuccin_macchiato"
 keyword = { fg = "mauve", modifiers = ["bold"] }
 
 "ui.background" = "0x282c34"
+"ui.menu" = { bg = "crust" }
+"ui.popup" = { bg = "0x282c34" }
+"ui.help" = { bg = "0x282c34" }
 
 "comment" = { fg = "subtext0", modifiers = ["italic"] }
 "variable.other.member" = { fg = "lavender" }
