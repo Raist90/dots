@@ -1,0 +1,32 @@
+layout {
+    tab focus=true name="editor" {   
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane focus=true borderless=true
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="server" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane split_direction="vertical" {
+            pane
+            pane
+        }
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+    tab name="notes" {   
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane borderless=true
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+}

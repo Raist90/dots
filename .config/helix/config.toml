@@ -1,0 +1,38 @@
+theme = "ultimate"
+
+[editor]
+true-color = true
+cursorline = true
+# bufferline = "always"
+color-modes = true
+auto-format = true
+line-number = "relative"
+popup-border = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-type"]
+center = ["file-name", "file-modification-indicator"]
+right = ["diagnostics", "selections", "position"]
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+auto-signature-help = true
+
+[editor.file-picker]
+hidden = false
+
+[keys.normal]
+# C-s = ':w' # save current buffer
+# y = "yank_main_selection_to_clipboard"
+# p = "paste_clipboard_before"
+# tab = ":bn" # buffer next
+# S-tab = ":bp" # buffer previous

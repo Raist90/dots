@@ -1,0 +1,12 @@
+inherits = "catppuccin_macchiato"
+
+keyword = { fg = "mauve", modifiers = ["bold"] }
+
+"ui.background" = "0x282c34"
+
+"comment" = { fg = "subtext0", modifiers = ["italic"] }
+"variable.other.member" = { fg = "lavender" }
+
+[palette]
+surface0 = "#363C45"
+teal = "#cad3f5"
