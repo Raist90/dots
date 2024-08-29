@@ -1,0 +1,24 @@
+#!/usr/bin/env dash
+
+# Date
+date=$(date "+%a %F %R")
+
+# CPU temp
+cpu_temp=$(cat /sys/class/thermal/thermal_zone*/temp | awk '{print $1/1000"°C"}')
+
+# PulseAudio volume and mute status
+mute_status=$(pactl get-sink-mute @DEFAULT_SINK@ | awk '{print $2}')
+if [ "$mute_status" = "sì" ]; then
+  volume="Muted"
+else
+  volume=$(pactl get-sink-volume @DEFAULT_SINK@ | awk '{print $5}')
+fi
+
+# Battery
+battery=$(cat /sys/class/power_supply/BAT0/capacity)
+
+# Battery status
+battery_status=$(cat /sys/class/power_supply/BAT0/status)
+
+# Status bar
+echo "$battery $battery_status | Volume $volume | Temp $cpu_temp | $date" 
