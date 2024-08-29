@@ -19,6 +19,8 @@ set $term alacritty
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
+# Mako notifier
+exec mako
 
 include /etc/sway/config-vars.d/*
 
@@ -74,6 +76,9 @@ output * bg /home/manuel/Immagini/Sfondi/akira-wallpaper.jpg fill
     # Start your launcher
     bindsym $mod+d exec $menu
 
+    # Make a screenshot with grim
+    bindsym $mod+g exec /usr/bin/grim
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -81,10 +86,8 @@ output * bg /home/manuel/Immagini/Sfondi/akira-wallpaper.jpg fill
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Volume down
+    # Volume controls
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-
-    # Volume up
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 
     # Silence volume
