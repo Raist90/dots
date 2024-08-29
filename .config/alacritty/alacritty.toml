@@ -1,5 +1,5 @@
 [colors.primary]
-background = "#000000"
+background = "#171421"
 
 [env]
 ALACRITTY = "true"

@@ -1,3 +1,4 @@
-# local env files
-!.env*.local
-!.env
+# quick hack to exploit `dotfiles` repo's gitignore file
+!*
+
+node_modules
