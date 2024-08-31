@@ -1,0 +1,5 @@
+inherits = "github_dark_high_contrast"
+
+"ui.background" = "0x282c34"
+
+"comment" = { fg = "#d3d3d3", modifiers = ["italic"] }
