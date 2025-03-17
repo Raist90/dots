@@ -6,9 +6,19 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
+  -- Colorschemes
+  { import = "astrocommunity.colorscheme.rose-pine" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
+  -- Motions
   { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.completion.copilot-lua-cmp" },
-  { import = "astrocommunity.recipes.disable-tabline" },
+  -- Git
+  { import = "astrocommunity.git.blame-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
+  -- Completion
+  { import = "astrocommunity.completion.copilot-lua" },
+  -- Scroll
+  { import = "astrocommunity.scrolling.mini-animate" },
+  -- Packs
+  { import = "astrocommunity.pack.json" },
   -- import/override with your plugins folder
 }
