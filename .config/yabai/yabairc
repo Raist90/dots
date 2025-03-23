@@ -45,3 +45,5 @@ yabai -m config                                 \
     mouse_drop_action            swap
 
 echo "yabai configuration loaded.."
+
+yabai -m config --space 1 layout float
