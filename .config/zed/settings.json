@@ -7,10 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "auto_update_extensions": {
-    "vue": false
-  },
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -22,8 +19,8 @@
   "buffer_font_size": 14,
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Rosé Pine"
+    "light": "Fleet Dark",
+    "dark": "Fleet Dark"
   },
   "vim_mode": true,
   "vim": {
