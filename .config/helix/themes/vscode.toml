@@ -1,0 +1,4 @@
+inherits = "dark_plus"
+
+"keyword" = { fg = "blue2", modifiers = ["bold"] }
+"comment" = { fg = "dark_green", modifiers = ["italic"] }

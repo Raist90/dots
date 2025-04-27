@@ -1,9 +1,8 @@
-theme = "ultimate"
+theme = "fleet_dark"
 
 [editor]
 true-color = true
 cursorline = true
-# bufferline = "always"
 color-modes = true
 auto-format = true
 line-number = "relative"
@@ -25,14 +24,16 @@ right = ["diagnostics", "selections", "position"]
 render = true
 
 [editor.lsp]
-auto-signature-help = true
+auto-signature-help = false
 
 [editor.file-picker]
 hidden = false
 
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
 [keys.normal]
 # C-s = ':w' # save current buffer
 # y = "yank_main_selection_to_clipboard"
-# p = "paste_clipboard_before"
-# tab = ":bn" # buffer next
-# S-tab = ":bp" # buffer previous
+# p = "paste_clipboard_after"
+# P = "paste_clipboard_before"

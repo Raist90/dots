@@ -89,23 +89,23 @@ language-servers = [ "astro-ls", "eslint" ]
 formatter = { command = "prettier", args = ["--plugin", "prettier-plugin-astro", "--parser", "astro"] }
 auto-format = true
 
-# [language-server.vuels]
-# command = "vue-language-server"
-# args = ["--stdio"]
+[language-server.vuels]
+command = "vue-language-server"
+args = ["--stdio"]
+
+[language-server.vuels.config]
+vue = { hybridMode = true }
+typescript = { tsdk = "/Users/manuel.detoma/.nvm/versions/node/v20.17.0/lib/node_modules/typescript/lib" }
 
 [[language]]
 name = "vue"
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "vue"] }
-# language-servers = ["vuels", "typescript-language-server", "eslint", "tailwindcss-ls"]
-language-servers = ["typescript-language-server", "eslint", "tailwindcss-ls"]
+language-servers = ["typescript-language-server", "vuels", "eslint", "tailwindcss-ls"]
+comment-tokens = ["//"]
+# language-servers = ["vuels", "eslint", "tailwindcss-ls"]
 
 [[language-server.typescript-language-server.config.plugins]]
 name = "@vue/typescript-plugin"
-# location = "/opt/homebrew/lib/node_modules/@vue/language-server"
 languages = ["vue"]
-location = "/home/manuel/.nvm/versions/node/v20.10.0/lib/node_modules/@vue"
-
-# [language-server.vuels.config]
-# vue = { hybridMode = false }
-# typescript = { tsdk = "/opt/homebrew/Cellar/typescript/5.4.5/libexec/lib/node_modules/typescript/lib" }
+location = "/Users/manuel.detoma/.nvm/versions/node/v20.17.0/lib/node_modules/@vue/typescript-plugin"
