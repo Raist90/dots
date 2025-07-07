@@ -27,7 +27,7 @@
       "y": "project_panel::Copy",
       "p": "project_panel::Paste",
       "x": "project_panel::Cut",
-      "z": "project_panel::CollapseAllEntries",
+      "z": "project_panel::CollapseAllEntries"
     }
   },
   {
@@ -36,7 +36,8 @@
       "ctrl-j": "workspace::ActivatePaneDown",
       "ctrl-k": "workspace::ActivatePaneUp",
       "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight"
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "space w w": "workspace::ActivateNextPane"
     }
   },
   {
@@ -82,6 +83,20 @@
     "context": "Workspace && !Terminal",
     "bindings": {
       "cmd-n": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "j": ["vim::Down", { "display_lines": true }],
+      "k": ["vim::Up", { "display_lines": true }]
+    }
+  },
+  {
+    "context": "VimCount",
+    "bindings": {
+      "j": ["vim::Down", { "display_lines": false }],
+      "k": ["vim::Up", { "display_lines": false }]
     }
   }
 ]
