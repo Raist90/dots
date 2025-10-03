@@ -7,35 +7,29 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
   "edit_predictions": {
     "mode": "subtle",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null
-    },
-    "enabled_in_assistant": false
+    "enabled_in_text_threads": false
   },
-  "show_edit_predictions": true,
-  "languages": {
-    "Vue.js": {
-      "show_edit_predictions": true
-    }
-  },
-  "icon_theme": "Colored Zed Icons Theme Dark",
-  "assistant": {
+  "agent": {
     "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4o"
+      "model": "gpt-4.1"
     },
     "version": "2"
   },
+  "show_edit_predictions": true,
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "ui_font_size": 15,
   "buffer_font_size": 14,
   "theme": {
     "mode": "system",
     "light": "Fleet Dark",
-    "dark": "Fleet Dark Purple"
+    "dark": "Fleet Dark"
   },
   "vim_mode": true,
   "vim": {
@@ -52,8 +46,8 @@
   "tabs": {
     "file_icons": true
   },
-  "ui_font_family": "Hack",
-  "buffer_font_family": "Hack",
+  "ui_font_family": "Monaco",
+  "buffer_font_family": "Monaco",
   "cursor_blink": false,
   "indent_guides": {
     "line_width": 2,

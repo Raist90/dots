@@ -57,7 +57,8 @@
       "space w v": "pane::SplitRight",
       "space f b": "tab_switcher::Toggle",
       "space f w": "pane::DeploySearch",
-      "space t r": ["task::Spawn", { "task_name": "Run Vitest" }]
+      "space t r": ["task::Spawn", { "task_name": "Run Vitest" }],
+      "space Z": "workspace::ToggleCenteredLayout"
     }
   },
   {
@@ -82,7 +83,13 @@
   {
     "context": "Workspace && !Terminal",
     "bindings": {
-      "cmd-n": "workspace::NewTerminal"
+      "cmd-n": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-n": "terminal_panel::ToggleFocus"
     }
   },
   {
